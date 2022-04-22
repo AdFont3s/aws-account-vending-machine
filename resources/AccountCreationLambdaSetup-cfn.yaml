@@ -10,7 +10,7 @@ Parameters:
   SourceBucket:
     Description: "Bucket name of the S3 bucket holding all the files for the Account Vending Machine set up"
     Type: String
-    Default: "mpsa-reinvent19"
+    Default: "mpsa-reinvent-udit"
 
   SourceTemplate:
     Description: "Enter the template URL for the cloudformation template to launch account creation"
@@ -70,13 +70,13 @@ Resources:
       Distributor: "Amazon"
       Name: "Account Vending Machine"
       Owner: "AWS"
-      SupportEmail: "support@yourcompany.com"
+      SupportEmail: "denny.chandra@transpire.com"
       SupportUrl: "https://www.amazon.com"
       SupportDescription: "Support Description"
       ProvisioningArtifactParameters:
       -
-        Description: "March 2019"
-        Name: "March 2019 v1.0"
+        Description: "April 2022"
+        Name: "April 2022 v1.0"
         Info:
           LoadTemplateFromURL : !Ref SourceTemplate
 

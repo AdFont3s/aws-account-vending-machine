@@ -235,13 +235,13 @@ Resources:
       Distributor: "Amazon"
       Name: "S3 Bucket Product"
       Owner: "IT Services"
-      SupportEmail: "support@yourcompany.com"
+      SupportEmail: "denny.chandra@transpire.com"
       SupportUrl: "https://www.amazon.com"
       SupportDescription: "Support Description"
       ProvisioningArtifactParameters:
       -
-        Description: "Dec 2019"
-        Name: "Dec 2019"
+        Description: "Apr 2022"
+        Name: "Apr 2022"
         Info:
           LoadTemplateFromURL: "https://raw.githubusercontent.com/aws-samples/aws-service-catalog-reference-architectures/master/s3/sc-s3-cidr-ra.json"
 
