@@ -15,7 +15,8 @@ Parameters:
   SourceTemplate:
     Description: "Enter the template URL for the cloudformation template to launch account creation"
     Type: String
-    Default: "https://mpsa-reinvent19-us-east-2.s3.us-east-2.amazonaws.com/accountbuilder.yml"
+    Default: "https://github.com/AdFont3s/aws-account-vending-machine/blob/master/resources/accountbuilder.yml"
+    #Default: "https://mpsa-reinvent19-us-east-2.s3.us-east-2.amazonaws.com/accountbuilder.yml"
 
   AccountAdministrator:
     Description: "Enter the ARN of the IAM entity (role or user or group) that will be performing account creation from AWS Service Catalog"
@@ -34,9 +35,7 @@ Resources:
       TracingConfig:
           Mode: "Active"
       Code:
-        S3Bucket: !Sub
-          - ${Bucket}-${AWS::Region}
-          - { Bucket: !Ref SourceBucket }
+        S3Bucket: !Ref SourceBucket 
         S3Key: "AccountCreationLambda.zip"
 
   LambdaExecuteRole:
