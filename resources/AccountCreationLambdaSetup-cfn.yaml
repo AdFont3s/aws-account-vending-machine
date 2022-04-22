@@ -15,7 +15,7 @@ Parameters:
   SourceTemplate:
     Description: "Enter the template URL for the cloudformation template to launch account creation"
     Type: String
-    Default: "https://github.com/AdFont3s/aws-account-vending-machine/blob/master/resources/accountbuilder.yml"
+    Default: "https://mpsa-reinvent-udit.s3.ap-southeast-2.amazonaws.com/accountbuilder.yml"
     #Default: "https://mpsa-reinvent19-us-east-2.s3.us-east-2.amazonaws.com/accountbuilder.yml"
 
   AccountAdministrator:
